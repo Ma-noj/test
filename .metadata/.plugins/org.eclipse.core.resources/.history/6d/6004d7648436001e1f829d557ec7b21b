@@ -1,0 +1,12 @@
+package edu.clarivate.manytone.dao;
+
+import edu.clarivate.manytone.entity.Hotel;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Hotel hotel = new Hotel();
+		hotel.setHotelId(1);
+		hotel.setHotelName("ABC");
+		
+	}
+}

@@ -1,0 +1,12 @@
+package edu.clarivate.manytone.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Room {
+	@Id
+	private int roomId;
+	private String roomName;
+
+}

@@ -1,0 +1,28 @@
+package edu.clarivate.onetomany.entity;
+
+public class Sim {
+	private int simInt;
+	private String simProvider;
+	private long simNumber;
+	public int getSimInt() {
+		return simInt;
+	}
+	public void setSimInt(int simInt) {
+		this.simInt = simInt;
+	}
+	public String getSimProvider() {
+		return simProvider;
+	}
+	public void setSimProvider(String simProvider) {
+		this.simProvider = simProvider;
+	}
+	public long getSimNumber() {
+		return simNumber;
+	}
+	public void setSimNumber(long simNumber) {
+		this.simNumber = simNumber;
+	}
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package edu.clarivate.springmvc.dto;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class UserController {
+
+	public void loadUser() {
+		ModelAndView mV = new ModelAndView("Register.jsp");
+	}
+}

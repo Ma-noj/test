@@ -1,0 +1,17 @@
+package edu.clarivate.pojo;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Student {
+	@Value(value = "101")
+	int id;
+	@Value(value = "Prithi")
+	String name;
+	double marks;
+
+	public void display() {
+		System.out.println("Student id = "+id);
+		System.out.println("Student Name = "+name);
+		System.out.println("Student marks = "+marks);
+	}
+}

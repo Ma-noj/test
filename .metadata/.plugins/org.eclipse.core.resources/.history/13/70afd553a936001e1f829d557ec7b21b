@@ -1,0 +1,21 @@
+package edu.clarivate.foodapp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import edu.clarivate.foodapp.entity.User;
+
+public class UserUpdateClass {
+
+	public static void main(String[] args) {
+		User user = findUserById(1);
+	}
+
+	public static User findUserById(int userId) {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("alpha");
+		EntityManager manager = factory.createEntityManager();
+		manager.find(User.class, userId);
+	}
+
+}

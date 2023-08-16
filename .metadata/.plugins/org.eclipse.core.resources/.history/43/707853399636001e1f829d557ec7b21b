@@ -1,0 +1,33 @@
+package edu.clarivate.manytomany.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Cource cource1 = new Cource();
+		cource1.setCourceId(1);
+		cource1.setCourceName("Maths");
+		cource1.setNumberOfDays(40);
+
+		Cource cource2 = new Cource();
+		cource2.setCourceId(2);
+		cource2.setCourceName("English");
+		cource2.setNumberOfDays(50);
+
+		Cource cource3 = new Cource();
+		cource3.setCourceId(3);
+		cource3.setCourceName("Biology");
+		cource3.setNumberOfDays(80);
+
+		List<Cource> cources = new ArrayList<Cource>();
+
+		Student student1 = new Student();
+		student1.setStudentId(101);
+		student1.setStudentName("Prithi");
+		student1.setStudentEmail("prithi@abc.in");
+		student1.setCources(null);
+	}
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="myComputer" class="edu.clarivate.pojo.setter.Computer">
+		<property name="id" value="101"></property>
+		<property name="name" value="ZenBook"></property>
+		<property name="processor" value="Ryzen"></property>
+		<property name="ram" value="8"></property>
+	</bean>
+
+	<bean id="employeeInfo" class="edu.clarivate.pojo.setter.Employee">
+		<property name="id" value="1001"></property>
+		<property name="name" value="Ram"></property>
+		<property name="email" value="ram@abc.in"></property>
+		<property name="salary" value="30000.98"></property>
+	</bean>
+
+	<bean id="userInfo" class="edu.clarivate.pojo.setter.User"></bean>
+	
+	<bean id="usb"></bean>
+</beans>

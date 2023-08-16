@@ -1,0 +1,62 @@
+package edu.clarivate.springmvc.dto;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import edu.clarivate.springmvc.dao.UserDao;
+
+@Controller
+public class UserController {
+	@Autowired
+	private UserDao userDao;
+
+	@RequestMapping("/userapp")
+	public ModelAndView loadUser() {
+		ModelAndView mV = new ModelAndView("Register.jsp");
+		mV.addObject("user", new User());
+		return mV;
+	}
+
+	@RequestMapping("/saveUser")
+	public ModelAndView saveUser(User user) {
+		boolean result = userDao.saveUser(user);
+
+		ModelAndView mV = new ModelAndView("message.jsp");
+		if (result) {
+			return findAllUser();
+		} else {
+			mV.addObject("status", "User Not Created !!");
+		}
+		return mV;
+	}
+
+	@RequestMapping("/display")
+	public ModelAndView findAllUser() {
+		List<User> listOfUser = userDao.findAllUser();
+		ModelAndView mV = new ModelAndView("display.jsp");
+		mV.addObject("listUser", listOfUser);
+		return mV;
+	}
+
+	@RequestMapping("/delete")
+	public ModelAndView removeUser(@RequestParam(name = "id") int id) {
+		boolean result = userDao.removeUser(id);
+		if (result) {
+			return findAllUser();
+		}
+
+		ModelAndView mv = new ModelAndView("message.jsp");
+		mv.addObject("status", "User with the Given Id = " + id + " Not Found!!");
+		return mv;
+	}
+
+	@RequestMapping("/edit")
+	public void editUser(@RequestParam(name = "id") int id) {
+		User user= userDao.findUserById(id);
+	}
+}

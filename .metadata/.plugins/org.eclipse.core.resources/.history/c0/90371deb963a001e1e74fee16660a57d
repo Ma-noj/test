@@ -1,0 +1,14 @@
+package edu.clarivate.pojo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Mobile {
+	
+	Sim sim;
+
+	public void On() {
+		System.out.println("Mobile Is Turened On!!");
+		sim.connect();
+	}
+}

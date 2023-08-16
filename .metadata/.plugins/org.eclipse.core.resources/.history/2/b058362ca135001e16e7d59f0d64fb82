@@ -1,0 +1,9 @@
+package edu.clarivatecarappjdbc;
+
+public class ReadCarDetalies {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

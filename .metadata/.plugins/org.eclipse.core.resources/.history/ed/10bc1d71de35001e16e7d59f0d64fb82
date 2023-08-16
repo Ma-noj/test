@@ -1,0 +1,6 @@
+package edu.clarivate.onetoone.entity;
+
+public class Person {
+	private int personId;
+	private String personName;
+}

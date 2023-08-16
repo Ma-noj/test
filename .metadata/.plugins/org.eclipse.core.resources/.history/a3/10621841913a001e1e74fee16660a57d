@@ -1,0 +1,7 @@
+package edu.clarivate.mainclass;
+
+public class MainComputerUsb {
+	public static void main(String[] args) {
+		
+	}
+}

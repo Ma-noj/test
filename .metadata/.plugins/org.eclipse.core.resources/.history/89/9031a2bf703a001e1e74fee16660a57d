@@ -1,0 +1,10 @@
+package edu.clarivate.pojo.setter;
+
+public class Employee {
+	int id;
+	String name;
+	String email;
+	double salary;
+	
+	
+}

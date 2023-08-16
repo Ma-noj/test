@@ -1,0 +1,11 @@
+package edu.clarivate.mainclass;
+
+import org.springframework.core.io.ClassPathResource;
+
+public class MainComputer {
+
+	public static void main(String[] args) {
+		ClassPathResource resource = new ClassPathResource("setterConfig.xml");
+	}
+
+}

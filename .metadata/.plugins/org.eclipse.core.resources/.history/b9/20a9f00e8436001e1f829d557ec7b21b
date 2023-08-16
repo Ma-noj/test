@@ -1,0 +1,13 @@
+package edu.clarivate.manytone.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Hotel {
+	@Id
+	private int hotelId;
+	private String hotelName;
+	private int numberOfRooms;
+
+}

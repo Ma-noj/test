@@ -1,0 +1,17 @@
+package edu.clarivate.pojo.constructor;
+
+import edu.clarivate.pojo.constructor.Usb;
+
+public class Computer {
+	Usb usb;
+
+	public Computer(Usb usb) {
+		super();
+		this.usb = usb;
+	}
+
+	public void use() {
+		System.out.println(" I'm using Computer to ");
+		usb.connect();
+	}
+}

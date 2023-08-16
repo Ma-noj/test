@@ -1,0 +1,16 @@
+package edu.clarivate.springmvc.config;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "edu.clarivate.springmvc")
+public class MyConfig {
+
+	public void getEntityManager() {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("");
+	}
+}

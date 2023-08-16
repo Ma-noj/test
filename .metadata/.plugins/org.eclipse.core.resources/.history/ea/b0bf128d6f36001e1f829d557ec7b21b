@@ -1,0 +1,9 @@
+package edu.clarivate.onetomany.entity;
+
+public class Mobile {
+	private int mobileId;
+	private String mobileBrand;
+	private String mobileName;
+	private double mobilePrice;
+
+}

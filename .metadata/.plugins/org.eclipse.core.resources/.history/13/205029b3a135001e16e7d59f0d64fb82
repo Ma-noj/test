@@ -1,0 +1,20 @@
+package edu.clarivatecarappjdbc;
+
+public class ReadCarDetalies {
+
+	public static void main(String[] args) {
+		readCarInfo();
+	}
+
+	public static void readCarInfo() {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			String dbUrl = "jdbc:mysql://localhost:3306";
+			String userName = "root";
+			String password = "root";
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

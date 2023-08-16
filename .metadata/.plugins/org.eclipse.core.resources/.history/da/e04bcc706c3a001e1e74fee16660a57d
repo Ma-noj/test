@@ -1,0 +1,7 @@
+package edu.clarivate.pojo.setter;
+
+public class Computer {
+
+	public int id;
+	String name;
+}

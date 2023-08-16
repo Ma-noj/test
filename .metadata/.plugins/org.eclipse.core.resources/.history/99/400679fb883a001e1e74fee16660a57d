@@ -1,0 +1,10 @@
+package edu.clarivate.pojoconstructorinjection;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Person {
+	int id;
+	String name;
+	
+}

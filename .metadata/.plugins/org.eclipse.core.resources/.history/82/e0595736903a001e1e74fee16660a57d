@@ -1,0 +1,5 @@
+package edu.clarivate.pojo.setter;
+
+public class Computer1 {
+	Usb usb;
+}

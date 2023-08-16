@@ -1,0 +1,10 @@
+package edu.clarivate.pojo.constructor;
+
+public class Teacher {
+	String name;
+	String subject;
+
+	// parm-constructor
+
+	// display()
+}

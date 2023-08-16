@@ -1,0 +1,5 @@
+package edu.clarivate.manytone.entity;
+
+public class Room {
+
+}

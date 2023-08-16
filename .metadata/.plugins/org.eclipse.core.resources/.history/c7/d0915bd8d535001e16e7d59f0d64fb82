@@ -1,0 +1,17 @@
+package edu.clarivate.carapp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class BikeDatabaseReadAllOperation {
+
+	public static void main(String[] args) {
+		String jpqlQuery = "SELCET b FROM Bike b";
+
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("alpha");
+		EntityManager manager = factory.createEntityManager();
+		manager.createQuery(jpqlQuery);
+	}
+
+}

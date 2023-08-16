@@ -1,0 +1,5 @@
+package edu.clarivate.onetomany.entity;
+
+public class SIm {
+
+}

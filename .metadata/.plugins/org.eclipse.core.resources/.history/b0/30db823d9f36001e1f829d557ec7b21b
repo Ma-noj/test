@@ -1,0 +1,9 @@
+package edu.clarivate.foodapp.dao;
+
+public class UserMainClass {
+
+	public static void main(String[] args) {
+
+	}
+
+}

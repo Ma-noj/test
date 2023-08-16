@@ -1,0 +1,36 @@
+package edu.clarivate.springmvc.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.clarivate.springmvc.dto.User;
+
+public class UserDao {
+	@Autowired
+	EntityManager manager;
+
+	public boolean saveUser(User user) {
+		EntityTransaction transaction = manager.getTransaction();
+		if (user != null) {
+			transaction.begin();
+			manager.persist(user);
+			transaction.commit();
+			return true;
+		}
+		return false;
+	}
+
+	public void updateUser(int id, User user) {
+		User exsitingUser = manager.find(User.class, id);
+		if (exsitingUser != null) {
+
+		}
+		return false;
+	}
+
+	public void findUserByEmailAndPassword(String userEmail, String userPassword) {
+
+	}
+}

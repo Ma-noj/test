@@ -1,0 +1,16 @@
+package edu.clarivate.pojo.constructor;
+
+public class Student {
+	String name;
+	double marks;
+
+	public Student(String name, double marks) {
+		this.name = name;
+		this.marks = marks;
+	}
+
+	public void display() {
+		System.out.println("Studnet name = " + name);
+		System.out.println("Studnet Marks = " + name);
+	}
+}

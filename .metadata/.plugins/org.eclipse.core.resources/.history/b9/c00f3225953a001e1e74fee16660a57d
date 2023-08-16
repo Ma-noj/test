@@ -1,0 +1,9 @@
+package edu.clarivate.mainclass;
+
+public class MainComputerUsb {
+	public static void main(String[] args) {
+//		ApplicationContext context = new ClassPathXmlApplicationContext("setterConfig.xml");
+//		Computer1 computer = (Computer1) context.getBean("computer");
+//		computer.use();
+	}
+}

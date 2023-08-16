@@ -1,0 +1,15 @@
+package edu.clarivate.mainclass;
+
+import org.springframework.core.io.ClassPathResource;
+
+import edu.clarivate.pojo.Marker;
+
+public class MainMarker {
+
+	public static void main(String[] args) {
+		ClassPathResource resource = new ClassPathResource("MySpringConfig.xml");
+		
+		Marker marker = 
+	}
+
+}

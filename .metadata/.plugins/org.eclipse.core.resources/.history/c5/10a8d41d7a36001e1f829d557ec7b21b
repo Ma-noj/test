@@ -1,0 +1,14 @@
+package edu.clarivate.onetomany.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class MainClass2 {
+
+	public static void main(String[] args) {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("alpha");
+		EntityManager manager = factory.createEntityManager();
+	}
+
+}

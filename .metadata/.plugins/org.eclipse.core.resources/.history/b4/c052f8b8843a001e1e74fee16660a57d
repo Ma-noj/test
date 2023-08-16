@@ -1,0 +1,6 @@
+package edu.clarivate.pojo;
+
+public class Student {
+
+	int id;
+}

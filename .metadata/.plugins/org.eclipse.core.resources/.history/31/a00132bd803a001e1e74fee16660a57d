@@ -1,0 +1,6 @@
+package edu.clarivate.pojo.constructor;
+
+public class Teacher {
+	String name;
+	double salary;
+}

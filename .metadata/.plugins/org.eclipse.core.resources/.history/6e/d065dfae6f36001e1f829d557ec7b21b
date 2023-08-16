@@ -1,0 +1,6 @@
+package edu.clarivate.onetomany.entity;
+
+public class Sim {
+	private int simInt;
+
+}

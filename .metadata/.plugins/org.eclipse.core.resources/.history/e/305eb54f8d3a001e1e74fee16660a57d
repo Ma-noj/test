@@ -1,0 +1,32 @@
+package edu.clarivate.pojosetterinjection;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car {
+
+	int id;
+	String brand;
+	double price;
+
+	@Value(value = "1002")
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Value(value = "TATA")
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	@Value(value = "1209887.90")
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public void display() {
+		System.out.println("Car Id = "+id);
+	}
+
+}

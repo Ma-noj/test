@@ -1,0 +1,9 @@
+package edu.clarivate.mainclass;
+
+public class PenMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package edu.clarivate.manytomany.entity;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Cource cource1 = new Cource();
+		cource1.setCourceId(1);
+		cource1.setCourceName("Maths");
+		cource1.setNumberOfDays(40);
+
+		Cource cource2 = new Cource();
+		cource2.setCourceId(2);
+		cource2.setCourceName("English");
+		cource2.setNumberOfDays(40);
+
+		Cource cource1 = new Cource();
+		cource1.setCourceId(1);
+		cource1.setCourceName("Maths");
+		cource1.setNumberOfDays(40);
+	}
+
+}

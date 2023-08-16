@@ -1,0 +1,9 @@
+package edu.clarivate.mainclass;
+
+public class MainMarker {
+
+	public static void main(String[] args) {
+
+	}
+
+}

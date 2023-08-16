@@ -1,0 +1,14 @@
+package edu.clarivate.onetoone.dao;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import edu.clarivate.onetoone.entity.Person;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("");
+	}
+
+}

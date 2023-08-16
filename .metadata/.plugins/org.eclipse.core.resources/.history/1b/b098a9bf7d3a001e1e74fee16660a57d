@@ -1,0 +1,6 @@
+package edu.clarivate.pojo.constructor;
+
+public class Student {
+	String name;
+	double marks;
+}

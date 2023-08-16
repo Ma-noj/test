@@ -1,0 +1,8 @@
+package edu.clarivate.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MyConfig {
+
+}

@@ -1,0 +1,5 @@
+package edu.clarivate.springmvc.dao;
+
+public class UserDao {
+
+}

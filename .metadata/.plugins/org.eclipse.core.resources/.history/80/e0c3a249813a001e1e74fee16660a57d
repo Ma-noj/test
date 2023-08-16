@@ -1,0 +1,12 @@
+package edu.clarivate.pojo.constructor;
+
+public class Teacher {
+	String name;
+	String subject;
+
+	public  public Teacher() {
+		// TODO Auto-generated constructor stub
+	}() {
+		
+	}
+}

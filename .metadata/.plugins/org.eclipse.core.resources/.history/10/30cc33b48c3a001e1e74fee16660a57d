@@ -1,0 +1,12 @@
+package edu.clarivate.pojosetterinjection;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car {
+
+	int id;
+	String brand;
+	double price;
+
+}

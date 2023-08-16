@@ -1,0 +1,18 @@
+package edu.clarivate.springmvc.dao;
+
+import edu.clarivate.springmvc.dto.User;
+
+public class UserDao {
+
+	public void saveUser(User user) {
+
+	}
+
+	public void updateUser(int id, User user) {
+
+	}
+
+	public void findUserByEmailAndPassword(String userEmail, String userPassword) {
+
+	}
+}

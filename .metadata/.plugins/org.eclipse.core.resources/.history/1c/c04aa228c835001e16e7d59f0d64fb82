@@ -1,0 +1,15 @@
+package edu.clarivate.carapp.dao;
+
+import edu.clarivate.carapp.entity.Bike;
+
+public class BikeDatabaseOperation2 {
+	public static void main(String[] args) {
+		Bike bike1 = new Bike();
+		bike1.setBikeId(106);
+		bike1.setBikeName("Hunter");
+		bike1.setBikeBrand("Royal Enfield");
+		bike1.setBikeColour("Deep Gry");
+		bike1.setBikePrice(250000.00);
+		bike1.setBikeCC(350);
+	}
+}

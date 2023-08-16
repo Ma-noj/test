@@ -1,0 +1,14 @@
+package edu.clarivate.carapp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class BikeDatabaseReadOperation {
+
+	public static void main(String[] args) {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("alpha");
+		EntityManager manager = factory.createEntityManager();
+	}
+
+}

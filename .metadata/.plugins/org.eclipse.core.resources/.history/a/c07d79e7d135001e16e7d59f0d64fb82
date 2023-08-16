@@ -1,0 +1,9 @@
+package edu.clarivate.carapp.dao;
+
+import java.util.Scanner;
+
+public class BikeDatabaseUpdateOperation {
+	public static void main(String[] args) {
+		Scanner read = new Scanner(System.in);
+	}
+}

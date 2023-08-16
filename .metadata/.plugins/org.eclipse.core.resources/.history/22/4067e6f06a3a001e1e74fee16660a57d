@@ -1,0 +1,11 @@
+package edu.clarivate.mainclass;
+
+import edu.clarivate.pojo.Marker;
+
+public class MainMarker {
+
+	public static void main(String[] args) {
+		Marker marker = new Marker();
+	}
+
+}

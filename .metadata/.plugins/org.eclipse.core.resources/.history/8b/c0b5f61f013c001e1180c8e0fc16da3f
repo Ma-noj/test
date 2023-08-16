@@ -1,0 +1,46 @@
+package edu.clarivate.springmvc.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.clarivate.springmvc.dto.User;
+
+public class UserDao {
+	@Autowired
+	EntityManager manager;
+
+	public boolean saveUser(User user) {
+		EntityTransaction transaction = manager.getTransaction();
+		if (user != null) {
+			transaction.begin();
+			manager.persist(user);
+			transaction.commit();
+			return true;
+		}
+		return false;
+	}
+
+	public boolean updateUser(int id, User user) {
+		User exsitingUser = manager.find(User.class, id);
+		EntityTransaction transaction = manager.getTransaction();
+		if (exsitingUser != null) {
+			exsitingUser.setUserName(user.getUserName());
+			exsitingUser.setUserEmail(user.getUserEmail());
+			exsitingUser.setUserPassword(user.getUserPassword());
+			exsitingUser.setUserAge(user.getUserAge());
+			transaction.begin();
+			manager.merge(exsitingUser);
+			transaction.commit();
+			return true;
+		}
+		return false;
+	}
+
+	public void findUserByEmailAndPassword(String userEmail, String userPassword) {
+		String plSql = "SELECT u FROM User u WHERE u.userEmail =? AND u.userPassword ? ";
+		Query query = manager.createQuery(plSql);
+	}
+}
