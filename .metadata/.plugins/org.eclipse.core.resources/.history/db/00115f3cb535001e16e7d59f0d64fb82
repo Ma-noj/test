@@ -1,9 +1,0 @@
-package edu.clarivate.carapp.dao;
-
-public class CarDatabaseOperation {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

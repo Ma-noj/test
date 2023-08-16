@@ -29,10 +29,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="edu.clarivate.springmvc"/>
 		</list>
 		<list key="groupId">
+			<item value="edu.clarivate"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringMvc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,17 +51,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="edu.clarivate"/>
-			<item value="edu.clarivate.manytomany"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Spring_Core_Config_Class"/>
-			<item value="Spring_Core"/>
-			<item value="FoodApp_Hibernate"/>
-			<item value="ManyToMany_Hibernate"/>
-			<item value="ManyToOne_Hibernate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

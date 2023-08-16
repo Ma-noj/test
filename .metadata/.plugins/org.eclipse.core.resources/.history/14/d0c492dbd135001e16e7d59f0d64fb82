@@ -1,7 +1,0 @@
-package edu.clarivate.carapp.dao;
-
-public class BikeDatabaseUpdateOperation {
-	public static void main(String[] args) {
-		
-	}
-}

@@ -1,9 +1,0 @@
-package edu.clarivate.foodapp.dao;
-
-public class UserUpdateClass {
-
-	public static void main(String[] args) {
-		findUserById(1);
-	}
-
-}

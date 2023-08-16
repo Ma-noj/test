@@ -1,9 +1,0 @@
-package edu.clarivate.carapp.dao;
-
-public class BikeDatabaseReadAllOperation {
-
-	public static void main(String[] args) {
-		String jpqlQuery = "SELCET b FROM Bike b";
-	}
-
-}

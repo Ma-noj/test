@@ -1,8 +1,0 @@
-package edu.clarivate.onetoone.entity;
-
-public class Pan {
-	private int panId;
-	private String panNumber;
-	private String nameOnPan;
-	private Person person;
-}
