@@ -1,0 +1,30 @@
+package edu.clarivate.ems.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import edu.clarivate.ems.dao.EmployeeDao;
+import edu.clarivate.ems.entity.Employee;
+
+@Service
+public class EmployeeService {
+	@Autowired
+	private EmployeeDao employeeDao;
+
+	public Employee saveEmployee(Employee employee) {
+		if (employee != null) {
+			return employeeDao.saveEmployee(employee);
+		}
+		return null;
+	}
+
+	public Employee findByEmployeeId(int employeId) {
+		Optional<Employee> optional = employeeDao.findByEmployeeId(employeId);
+
+		if (optional.isPresent()) {
+			optional.get();
+		}
+	}
+}

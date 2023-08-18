@@ -1,0 +1,17 @@
+package edu.clarivate.ems.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.clarivate.ems.dao.EmployeeDao;
+import edu.clarivate.ems.entity.Employee;
+
+public class EmployeeService {
+	@Autowired
+	private EmployeeDao employeeDao;
+
+	public void saveEmployee(Employee employee) {
+		if (employee != null) {
+
+		}
+	}
+}

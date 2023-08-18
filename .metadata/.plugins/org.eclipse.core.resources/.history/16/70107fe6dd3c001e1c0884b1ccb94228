@@ -1,0 +1,5 @@
+package edu.clarivate.ems.service;
+
+public class SubjectService {
+
+}

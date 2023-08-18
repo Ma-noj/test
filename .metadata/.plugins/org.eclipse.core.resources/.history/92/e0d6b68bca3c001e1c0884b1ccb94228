@@ -1,0 +1,8 @@
+package edu.clarivate.ems.dao;
+
+import edu.clarivate.ems.repository.EmployeeRepository;
+
+public class EmployeeDao {
+
+	private EmployeeRepository repository;
+}

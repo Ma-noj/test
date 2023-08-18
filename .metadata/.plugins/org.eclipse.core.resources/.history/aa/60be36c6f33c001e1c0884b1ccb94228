@@ -1,0 +1,50 @@
+package edu.clarivate.ems.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.clarivate.ems.entity.Employee;
+import edu.clarivate.ems.service.EmployeeService;
+import edu.clarivate.ems.util.ResponseStructure;
+
+@RestController
+public class EmployeeController {
+	@Autowired
+	private EmployeeService employeeService;
+
+	@PostMapping("/employee/save")
+	public ResponseEntity<ResponseStructure<Employee>> saveEmployee(@RequestBody Employee employee) {
+		return employeeService.saveEmployee(employee);
+	}
+
+	@GetMapping("/employee/findById")
+	public Employee findEmployeeById(@RequestParam int employeeId) {
+		return employeeService.findByEmployeeId(employeeId);
+	}
+
+	@GetMapping("/employee/findAll")
+	public List<Employee> findAll() {
+		return employeeService.findAllEmployee();
+	}
+
+	@DeleteMapping("/employee/employeeId/{employeeId}")
+	public String deleteEmployeeById(@PathVariable int employeeId) {
+		return employeeService.deleteByEmployeeId(employeeId);
+	}
+
+	@PutMapping("/employee/update/{employeeId}")
+	public String updateEmployeeById(@PathVariable int employeeId, @RequestBody Employee employee) {
+		return employeeService.UpdateEmployeeById(employeeId, employee);
+	}
+
+}

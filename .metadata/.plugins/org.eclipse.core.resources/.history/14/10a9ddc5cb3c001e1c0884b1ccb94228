@@ -1,0 +1,10 @@
+package edu.clarivate.ems.service;
+
+import edu.clarivate.ems.entity.Employee;
+
+public class EmployeeService {
+
+	public void saveEmployee(Employee employee) {
+
+	}
+}

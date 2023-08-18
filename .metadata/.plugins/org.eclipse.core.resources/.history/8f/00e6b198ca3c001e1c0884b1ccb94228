@@ -1,0 +1,10 @@
+package edu.clarivate.ems.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.clarivate.ems.repository.EmployeeRepository;
+
+public class EmployeeDao {
+	@Autowired
+	private EmployeeRepository repository;
+}

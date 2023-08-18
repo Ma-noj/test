@@ -1,0 +1,14 @@
+package edu.clarivate.ems.service;
+
+import org.springframework.stereotype.Service;
+
+import edu.clarivate.ems.entity.Subject;
+
+@Service
+public class SubjectService {
+
+	public Subject saveSubject(Subject subject) {
+		return null;
+	}
+
+}

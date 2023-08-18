@@ -1,0 +1,16 @@
+package edu.clarivate.ems.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.clarivate.ems.entity.Employee;
+import edu.clarivate.ems.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	private EmployeeService employeeService;
+
+	public void saveEmployee(Employee employee) {
+
+	}
+}

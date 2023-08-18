@@ -1,0 +1,17 @@
+package edu.clarivate.ems.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import edu.clarivate.ems.entity.Subject;
+
+@Service
+public class SubjectService {
+	@Autowired
+	private SubjectDao dao;
+
+	public Subject saveSubject(Subject subject) {
+		return null;
+	}
+
+}

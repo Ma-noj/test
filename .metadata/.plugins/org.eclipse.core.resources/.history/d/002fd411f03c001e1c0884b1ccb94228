@@ -1,0 +1,5 @@
+package edu.clarivate.ems.util;
+
+public class ResponseStructure<T> {
+
+}

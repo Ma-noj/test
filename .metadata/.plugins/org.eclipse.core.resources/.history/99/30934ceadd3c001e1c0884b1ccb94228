@@ -1,0 +1,19 @@
+package edu.clarivate.ems.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import edu.clarivate.ems.entity.Subject;
+
+@RestController
+public class SubjectController {
+
+	private SubjectService service;
+
+	@PostMapping("/subject/save")
+	public void saveSubject(@RequestBody Subject subject) {
+		// save Subect in dataBase
+	}
+
+}

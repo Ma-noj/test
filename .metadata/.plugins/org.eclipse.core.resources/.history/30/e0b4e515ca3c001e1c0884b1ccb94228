@@ -1,0 +1,5 @@
+package edu.clarivate.ems.repository;
+
+public interface EmployeeRepository {
+
+}

@@ -1,0 +1,17 @@
+package edu.clarivate.demospringbootapp.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	@GetMapping("/display")
+	public String display() {
+		return "Hello";
+	}
+	
+	@GetMapping("/msg")
+	public String print() {
+		return "Welcome";
+	}
+}

@@ -1,0 +1,15 @@
+package edu.clarivate.ems.dao;
+
+import org.springframework.stereotype.Repository;
+
+import edu.clarivate.ems.entity.Subject;
+
+@Repository
+public class SubjectDao {
+
+	public Subject saveSubject(Subject subject) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
