@@ -29,13 +29,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="edu.clarivate.springmvc"/>
 		</list>
 		<list key="groupId">
-			<item value="edu.clarivate"/>
 		</list>
 		<list key="artifactId">
-			<item value="SpringMvc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -51,10 +48,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="edu.clarivate"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringJDBC"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -86,6 +85,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Alpha\Documents\Clarivate\Initializr\SpringSecurityExample"/>
 			<item value="C:\Users\Alpha\Documents\Clarivate\Initializr\EmployeeManageSystem"/>
 			<item value="C:\Users\Alpha\Documents\Clarivate\Initializr\DemoSpringBootApp"/>
 		</list>
